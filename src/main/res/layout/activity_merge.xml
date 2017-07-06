@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/linear"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp">
+        <VideoView
+            android:id="@+id/mergevideoview"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMPORT"
+            android:drawableLeft="@drawable/importmusic"
+            android:id="@+id/musicbtn"
+            android:onClick="onClick"
+            android:background="@drawable/button_yellow"
+            style="@style/button_text"
+            android:layout_marginTop="57dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:drawableLeft="@drawable/save"
+            android:id="@+id/savebtn"
+            android:onClick="onClick"
+            android:background="@drawable/button_yellow"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:drawableLeft="@drawable/home"
+            android:id="@+id/homebtn"
+            android:onClick="onClick"
+            android:background="@drawable/button_yellow"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/savebtn"
+            android:layout_alignStart="@+id/savebtn" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

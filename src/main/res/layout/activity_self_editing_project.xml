@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/relativeLayout">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/_relativeLayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/mergebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:drawableLeft="@drawable/createyourvideo"
+            android:text="MERGE"
+            android:background="@drawable/button_yellow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            style="@style/button_text"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/_relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <kau.easystudio.ui.DragDropGridView
+            android:id="@+id/list_apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:columnWidth="80dp"
+            android:paddingRight="3dp"
+            android:paddingLeft="5dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

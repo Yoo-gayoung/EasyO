@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/rel"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+        <SlidingDrawer
+            android:id="@+id/slide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:allowSingleTap="true"
+            android:animateOnClick="true"
+            android:bottomOffset="0dp"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="vertical"
+            android:topOffset="350dp"
+            >
+
+            <ImageView
+                android:id="@+id/handle"
+                android:src="@drawable/btn_arrow_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7bcbcbc"/>
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/handle"
+                android:background="#F7bcbcbc"
+                android:orientation="vertical"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:id="@+id/horizon">
+                    <LinearLayout
+                        android:id="@+id/scrollview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/dur_tv"
+                    android:layout_below="@+id/horizon"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#313131"
+                    android:gravity="right"
+                    />
+
+
+            </RelativeLayout>
+        </SlidingDrawer>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rel">
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_yellow"
+            android:text="CREATE"
+            style="@style/button_text" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

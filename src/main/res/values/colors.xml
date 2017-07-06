@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="green">#00ff00</color>
+
+    <color name="blue">#0000ff</color>
+
+    <color name="blue_light">#00ffff</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="progress">#bb6b6666</color>
+
+    <color name="secprogress">#00ffffff</color>
+
+    <color name="PrimaryColor">#3F51B5</color>
+    <color name="PrimaryDarkColor">#303F9F</color>
+    <color name="AccentColor">#3F51B5</color>
+    <color name="WindowBackground">#FFFFFF</color>
+    <color name="TextPrimaryColor">#FFFFFF</color>
+
+</resources>
